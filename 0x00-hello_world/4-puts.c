@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Program printing text
+ * main - Program prints text using puts
  * Return: 0
  */
 int main(void)

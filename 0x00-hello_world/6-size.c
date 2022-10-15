@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Program printing text with printf
+ * main - Program printing size of various types
  * Return: 0
  */
 int main(void)

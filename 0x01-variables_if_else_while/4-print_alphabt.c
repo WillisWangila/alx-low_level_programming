@@ -12,7 +12,7 @@ int main(void)
 	lc_alphabet = 'a';
 	while (lc_alphabet <= 'z')
 	{
-		if ((lc_alphabet != 'q') && (lc_alphabet!= 'e'))
+		if ((lc_alphabet != 'q') && (lc_alphabet != 'e'))
 		{
 			putchar(lc_alphabet);
 		}

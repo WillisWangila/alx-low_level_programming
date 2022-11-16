@@ -2,18 +2,15 @@
 #include <stdlib.h>
 
 /**
- * init_dog - Initializes a struct variable.
- * @d: The dog.
- * @name: The name of the dog.
- * @age: The age of the dog.
- * @owner: The owner of the dog.
+ * free_dog - Frees dogs.
+ * @d: The dog to be freed.
  */
-void init_dog(struct dog *d, char *name, float age, char *owner)
+void free_dog(dog_t *d)
 {
-	if (d != NULL)
-	{
-		d->name = name;
-		d->age = age;
-		d->owner = owner;
-	}
+	if (d == NULL)
+		return;
+
+	free(d->owner);
+	free(d->name);
+	free(d);
 }
